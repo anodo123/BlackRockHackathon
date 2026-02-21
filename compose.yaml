@@ -1,0 +1,9 @@
+# Docker compose definition if additional services required
+# For now only single container
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "5477:5477"
+    container_name: blk-hacking-ind-yourname
